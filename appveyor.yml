@@ -12,6 +12,8 @@ install:
 
 build_script:
   - yarn run icon-gen
+  - path
+  - echo "%cd%"
   - node_modules\.bin\grunt
   - node_modules\.bin\build --em.environment=%SIGNAL_ENV% --publish=never
 
