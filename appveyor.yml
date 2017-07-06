@@ -6,7 +6,10 @@ cache:
   - node_modules -> package.json
 
 install:
+  - shorten_win_path.bat
   - set PATH=C:\Ruby23-x64\bin;%PATH%
+  - path
+  - echo "%cd%"
   - ps: Install-Product node 6 x64
   - yarn install
 
