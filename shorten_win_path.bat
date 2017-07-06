@@ -22,4 +22,4 @@ FOR %%a IN (%TempPath%) DO (
 echo -------
 echo "New PATH:"
 echo %var%
-set PATH=%var%
+setx PATH=%var%
